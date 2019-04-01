@@ -192,7 +192,6 @@ function ingredient_replace($ingredient_replace){
 
 	$response = $client->send_request($request); 
 
-<<<<<<< HEAD
 	$ingredient = $response["body"]["ingredient"];
 	echo "Ingredient:  ".$ingredient."<br>";
 
@@ -211,11 +210,6 @@ function ingredient_replace($ingredient_replace){
 
 # When $auto_number is empty, it gives an error. Error in API?
 # Solution: Make $auto_number required not optional!
-=======
-	var_dump($response);
-}
-
->>>>>>> 75f996bdbe76420a22457b57f7634fb5000ad849
 function autocomplete_menu_item($auto_menu,$auto_number){
 
 	$client = new rabbitMQClient("../testRabbitMQ.ini","testServer");
@@ -227,7 +221,6 @@ function autocomplete_menu_item($auto_menu,$auto_number){
 
 	$response = $client->send_request($request); 
 
-<<<<<<< HEAD
 	/*if (!empty($auto_number)){
 		$size = $auto_number;		
 	}
@@ -253,12 +246,6 @@ function autocomplete_menu_item($auto_menu,$auto_number){
 
 #Sometimes it's given errors when displaying the prep minutes and cooking minutes
 # because some response doesnt have that feature. Need to add isset() or !empty()
-=======
-	var_dump($response);
-}
-
-
->>>>>>> 75f996bdbe76420a22457b57f7634fb5000ad849
 function random_recipes($random_number,$random_tags){
 
 	$client = new rabbitMQClient("../testRabbitMQ.ini","testServer");
@@ -271,7 +258,6 @@ function random_recipes($random_number,$random_tags){
 	$response = $client->send_request($request); 
 
 	var_dump($response);
-<<<<<<< HEAD
 	echo "<br><br><br>";
 	$size = count($response["body"]["recipes"]);
 
@@ -463,8 +449,6 @@ function random_recipes($random_number,$random_tags){
 
 			echo "<br><br>";
 		}	
-=======
->>>>>>> 75f996bdbe76420a22457b57f7634fb5000ad849
 
 }
 
