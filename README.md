@@ -3,7 +3,7 @@
 It help individuals prepare meals according to their diet, budget and nutritional requirements using the Spoonacular API.
 
 
-## GETTING STARTED
+## Getting Started
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ This project was made in LAMP : Linux(ubuntu), Apache, Mysql, PHP.
 - Install Rabbitmq
 - Install PHPMyadmin
 
-## RUNNUNG THE TEST
+## Running the test
 
 1. Open Backend/loginServer.php so the DB starts listening. 
     - IMPORTANT: Change the broker_host in file Backend/testRabbitMQ.ini to the IP 
@@ -46,3 +46,14 @@ address of the DMZ server/computer.
     - Autocomplete menu search
     - Search for random recipes
 
+## Build with
+
+  * Bootstrap -  web framework used 
+  
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details  
+  
+## Acknowledgments
+
+`You can do it!`
